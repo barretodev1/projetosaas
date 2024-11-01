@@ -20,7 +20,7 @@ const BookingItem = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center px-4 justify-center border-l border-solid border-secondary gap-1">
+                <div className="flex flex-col items-center px-2 justify-center gap-1">
                     <p className="text-sm">Fevereiro</p>
                     <p className="text-xl">06</p>
                     <p className="text-sm">09:45</p>

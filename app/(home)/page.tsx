@@ -2,7 +2,7 @@ import { ptBR } from "date-fns/locale";
 import Header from "../_components/header";
 import { format } from "date-fns"
 import Search from "./_components/search";
-import BookingItem from "../_components/booking-item";
+import BookingItem from "../_components/booking-item"
 import BarbershopItem from "./_components/barbershop-item"
 import { db } from "../_lib/prisma"
 
@@ -28,16 +28,16 @@ export default async function Home() {
         <BookingItem />
       </div>    
 
+
       <div className="p-5">
         <h2 className="text-xs uppercase text-gray-400 font-bold">RECOMENDADOS</h2>
 
-        <div className="flex gap-4 mt-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
-          {barbershop.map((barbershopDB) => (
-            <BarbershopItem key={barbershopDB.id} barbershop={barbershopDB} />
+        <div className="flex mt-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+          {barbershop.map((barbershop) => (
+            <BarbershopItem key={barbershop.id} barbershop={barbershop}/>
           ))}
         </div>
       </div>
-
 
       <div className="p-5 mb-[4.5rem]">
         <h2 className="text-xs uppercase text-gray-400 font-bold">POPULAREs</h2>
